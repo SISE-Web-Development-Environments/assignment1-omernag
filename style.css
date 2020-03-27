@@ -20,10 +20,13 @@ body {
 	font-weight: bold;
 	font-family: Verdana,sans-serif;
 	color: black;
-	background-color: rgba(255, 255, 255, 0.795);
+	background-color: rgba(255, 255, 255, 0.589);
 	text-align: center;
 	padding: 30 px;
 
+}
+#qr{
+	text-align: center;
 }
 .threeDots{
 	font-size:25px;
@@ -34,15 +37,21 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100%;
-}
-ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
 }
-li {
+.lined{
+	text-decoration: underline;
+}
+li{	
+	text-align: center;
+	list-style: none;
+
+}
+li.menu {
 	float: left;
 }
 li a {
@@ -62,7 +71,7 @@ li a:hover {
 	float : right;
 }
 a.section{
-	  color:rgba(255, 255, 255, 0.863);
+	  color:rgba(255, 255, 255, 0.89);
 		font-family: "Courier New", Courier, monospace;	
 		font-size: 50px;
 		font-weight: bold;
@@ -77,3 +86,41 @@ span.headerText{
 	padding: 1px 150px;
 }
   
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input.click {
+	background-color: rgb(7, 109, 139);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input.click:hover {
+	background-color: rgb(11, 152, 196);
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+	font-weight: bold;
+	font-family: Verdana,sans-serif;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.589);
+	padding: 20px;
+  }

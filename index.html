@@ -4,14 +4,16 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
 <ul id="menu">
-<li><a class ="navItem" href="#about">About Me</a></li>
-<li><a class ="navItem" href="#photos">My Photos</a></li>
-<li><a class ="navItem" href="#playlist">My Playlist</a></li>
-<li><a class ="navItem" href="#like">Like</a></li>
-<li><a class ="navItem" href="#qrcoder">QR code</a></li>
-<li><a class ="navItem" href="#spa">Q&A</a></li>
-<li id="contactMe"><a class ="navItem" href="#contact">Contact Me</a></li>
+<li class="menu"><a class ="navItem" href="#about">About Me</a></li>
+<li class="menu"><a class ="navItem" href="#photos">My Photos</a></li>
+<li class="menu"><a class ="navItem" href="#playlist">My Playlist</a></li>
+<li class="menu"><a class ="navItem" href="#like">Like</a></li>
+<li class="menu"><a class ="navItem" href="#qrcoder">QR code</a></li>
+<li class="menu"><a class ="navItem" href="#ans">Q&A</a></li>
+<li class="menu" id="contactMe"><a class ="navItem" href="#contact">Contact Me</a></li>
 </ul>
 
 <div>
@@ -125,69 +127,87 @@
 <br/>
 <br/>
 <br/>
-<a class="section"><span class="headerText">Give Me A Like ;)</span></a>
+<a class="section"><span class="headerText">Give Me A Like</span></a>
 <br/>
 <br/>
 <br/>
 </div>
+
+
+<div class=dataArea>
+  <br/>
+  <br/>
+  <span >It doesn't cost you anything you know...</span>
+  <br/>
+  <br/>
+  <div class="fb-like" data-href="https://sise-web-development-environments.github.io/assignment1-omernag/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+</div>
+
 
 <div id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<a class="section"><span class="headerText">Scan Me!</span></a>
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <a class="section"><span class="headerText">Scan & Share</span></a>
+  <br/>
+  <br/>
+  <br/>
 </div>
 
-<div id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<a class="section"><span class="headerText">Ans</span></a>
-<br/>
-<br/>
-<br/>
+<div id="qr">
+  <br/>
+  <br/>
+  <img src="qr.jpg" width="360" height="360">
+  <br/>
+  <br/>
+</div>
+
+<div id="ans" class="section">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <a class="section"><span class="headerText">Question & Answer</span></a>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+</div>
+
+<div class="dataArea">
+  <br/>
+  <br/>
+  <span class="lined">:Web1 , Web2 , Web3 שלושה הבדלים עיקריים בין</span>
+  <br/>
+  <ul>
+    <li>.בעוד בגרסה הראשונה מחבר הדף לבדו יכל להציג תוכן, הגרסה השנייה אפשרה למשתמשים לשתף בעצמם תוכן באתרים בהם ביקרו, והשלישית מאפשרת אינטרקצייה, ממשק וידע מכוונים אישית</li>
+    <li>.בשונה מהגרסה הראשונה, החל מהגרסה השנייה ניתן לבצע חיבורים למספר שירותים ולהציג תחת עמוד אחד שירותים ממקורות שונים ברשת</li>
+    <li>.בגרסה הראשונה ניתן היה לצרוך קבצים ע"י הורדתם בלבד מהשרת. הגרסה השנייה אינה סטטית ומאפשרת הזרמת תוכן ברשת, ובשלישית ניתן לצרוך שירותים בצורה שיתופית ומרובת משתתפים</li>
+  </ul>
+  <br/>
+  <br/>
+  <span class="lined" >:"נציג את ההבדלים בין הדורות השונים על ידי תרחיש השימוש - חיפוש השאילתה "תופעות לוואי של תרופות</span>
+  <br/>
+  <ul>
+    <li>.גרסה 1: מנוע החיפוש מחפש את השאילתה בעמודים שונים ברמת המאקרו בלבד - יציג עמודים בהם מילות המפתח מופיעות, חיפוש מהיר אבל רחוק מלהיות מדוייק</li>
+    <li>.גרסה 2: מנוע החיפוש משלב חיפוש עמודים לפני תגיות. מאחר ותוכן רב באינטרנט תוייג על ידי מפתחים ומשתמשים ידנית, המנועים יכולים להשתמש בתיוגים אלו על מנת להחזיר מידע מדוייק יותר</li>
+    <li> גרסה 3: התוכן והמשתמשים מתוייגים בתגיות מיקרו באופן אוטומטי. באחזור תוצאה למשתמש יתחשב מנוע החיפוש בפרמטריים רבים לגבי המידע (האם מדובר באתר של איגור רפואי למשל) ובמשתמש -גילו, מינו, התרופות השונות אותן נוטל ומצבו הרפואי (במידת האפשר מבחינת צנעת הפרט), אילו חיפושים נוספים ביצע והאם מצא בהם רלוונטיות</li>
+  </ul>
+  <br/>
+  <br/>
+  <br/>
 </div>
 
 <div id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <br/>
 <br/>
 <br/>
@@ -199,3 +219,32 @@
 <br/>
 <br/>
 </div>
+
+
+
+<div class="container">
+  <form action="mailto:omerna6@gmail.com" method="post" enctype="text/plain">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email.">
+
+    <label>Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name.">
+
+    <label>Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Your subject.">
+
+    <label>Content</label>
+    <textarea id="content" name="content" placeholder="What's on your mind?" style="height:200px"></textarea>
+
+    <input class="click" type="submit" value="Send">
+    <input class="click" type="reset" value="Reset">
+
+  </form>
+
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
