@@ -223,21 +223,39 @@
 
 
 <div class="container">
-  <form action="mailto:omerna6@gmail.com" method="post" enctype="text/plain">
+  <form action="mailto:omerna6@gmail.com?subject=A message from your personal page visitor!!!" method="post" enctype="text/plain">
 
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Your email.">
+    <label>Email:</label>
+    <input type="text" id="email" name="email" placeholder="Your email">
 
-    <label>Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name.">
-
-    <label>Subject</label>
-    <input type="text" id="subject" name="subject" placeholder="Your subject.">
-
-    <label>Content</label>
-    <textarea id="content" name="content" placeholder="What's on your mind?" style="height:200px"></textarea>
-
-    <input class="click" type="submit" value="Send">
+    <label>Name:</label>
+    <input type="text" id="name" name="Name" placeholder="Your name">
+    <label>What is your mood?</label>
+    </br>
+    <input  name="Emoji" type="radio" value=" &#128568;">
+    &#128568;
+    <input  name="Emoji" type="radio" value=" &#128569;">
+    &#128569;
+    <input  name="Emoji" type="radio" value=" &#128570;">
+    &#128570;
+    <input  name="Emoji" type="radio" value=" &#128571;">
+    &#128571;
+    <input  name="Emoji" type="radio" value=" &#128572;">
+    &#128572;
+    <input  name="Emoji" type="radio" value=" &#128573;">
+    &#128573;
+    <input  name="Emoji" type="radio" value=" &#128574;">
+    &#128574;
+    <input  name="Emoji" type="radio" value=" &#128575;">
+    &#128575;
+    <input  name="Emoji" type="radio" value=" &#128576;">
+    &#128576;
+  
+    </br>
+    </br>
+    <label>Content:</label>
+    <textarea name ="Content" placeholder="What's on your mind?" style="height:200px"></textarea>
+    <input class="click" type="submit" value="Send" onclick="addemoji()">
     <input class="click" type="reset" value="Reset">
 
   </form>
